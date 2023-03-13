@@ -7,7 +7,13 @@ type Student = {
 
 }
 
+type StudentGPA = {
+    gpa_value:number
 
+} 
+
+
+type StudentwithGpa = Student & StudentGPA
 
 let student_info = (info:Student): string =>{
     let enrolled = info.is_enrolled ? "" : "not"
